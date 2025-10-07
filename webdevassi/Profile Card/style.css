@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(242, 242, 242);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: white;
+    border-radius: 1.6pc;
+    box-shadow: 5px 5px 5px rgb(53, 53, 53, 0.5);
+    display: flex;
+    padding: 30px;
+    width: fit-content;
+    height: 15rem;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 20px;
+}
+.pfp {
+    border-radius: 50%;
+    background-image: url(pfp.webp);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin: 20px;
+}
+.about-heading{
+    font-size: 22px;
+    font-weight: 900;
+
+}
+.about-txt {
+    width: 20rem;text-align: center;
+
+}
+.connect, .port {
+    width: 80px;
+    height: 30px;
+    background-color: darkcyan;
+    border-radius: 1.6pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.connect:active , .port:active {
+    background-color: rgb(0, 69, 69);
+}
+.connect:hover, .port:hover {
+    cursor:pointer;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        padding: 20px 15px;
+        text-align: center;
+    }
+    .pfp {
+        margin: 0 auto 20px auto;
+        width: 120px;
+        height: 120px;
+    }
+    .about {
+        align-items: center;
+        gap: 15px;
+    }
+    .about-txt {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btns {
+        width: 80%;
+        max-width: 250px;
+    }
+}
